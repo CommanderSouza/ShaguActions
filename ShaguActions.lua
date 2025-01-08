@@ -134,7 +134,7 @@ core.load = function(self)
   local current = self:current()
   if not current then return end
 
-  for slot=1, 120 do
+  for slot=49, 60 do
     local exists = HasAction(slot)
     local book, id, name = self.scanner:get(slot)
 
@@ -199,7 +199,7 @@ core.save = function(self)
   local current = self:current(true)
   if not current then return end
 
-  for slot=1, 120 do
+  for slot=49, 60 do
     local exists = HasAction(slot)
     local book, id, name = self.scanner:get(slot)
 
